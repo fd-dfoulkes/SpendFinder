@@ -10,8 +10,7 @@ requires-python = ">=3.12"
 dependencies = [
     "click (>=8.1.8,<9.0.0)",
     "pyyaml (>=6.0.2,<7.0.0)",
-    "boto3 (>=1.36.21,<2.0.0)",
-    "cmds (>=0.1.1,<0.2.0)"
+    "boto3 (>=1.36.21,<2.0.0)"
 ]
 package = {include = ["spendfinder.cmds", "spendfinder.runner", "spendfinder.utils"]}
 

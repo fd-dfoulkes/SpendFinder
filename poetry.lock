@@ -56,17 +56,6 @@ files = [
 colorama = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
-name = "cmds"
-version = "0.1.1"
-description = "cmds for Python"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "cmds-0.1.1.tar.gz", hash = "sha256:31659c9bf5ddd49207c1f52e8756e667c26565417cb483461ded23729c49cf07"},
-]
-
-[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -220,4 +209,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "0d8ff0d284b0f3af5018c7f985d4a15ec02990cf8dd6f47c57443a996e4538da"
+content-hash = "8592735b683a5f3bdd444ce5c9800c977fc5451646408f2a7b6ff73b75cd9de8"
