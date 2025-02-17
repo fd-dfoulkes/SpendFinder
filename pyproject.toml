@@ -1,0 +1,28 @@
+[project]
+name = "spendfinder"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "fd-dfoulkes",email = "daniel.foulkes@fanduel.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click (>=8.1.8,<9.0.0)",
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "boto3 (>=1.36.21,<2.0.0)",
+    "cmds (>=0.1.1,<0.2.0)"
+]
+package = {include = ["spendfinder.cmds", "spendfinder.runner", "spendfinder.utils"]}
+
+[dependencies]
+click = "^8.0.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+spendfindercli = "spendfinder.runner.runner:cli"
+
