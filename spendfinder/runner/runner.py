@@ -1,8 +1,4 @@
 import click
-import os
-import yaml
-import spendfinder.cmds.ec2 as ec2
-import boto3
 from spendfinder.cmds.report_cloudwatch import logs_costs as logs
 from spendfinder.cmds.report_cloudwatch import metrics_costs as metrics
 
