@@ -11,7 +11,7 @@ def round_currency_up(value):
 # Classes
 
 @dataclasses.dataclass
-class CloudWatch:
+class CloudWatchLogStats:
     size_bytes: int
     arn: str
     retention_in_days: str
@@ -69,7 +69,7 @@ def logs_costs(profile):
                     retention_in_days = str(log_group["retentionInDays"])
                 else:
                     retention_in_days = "No retention policy"
-                results.append(CloudWatch(size_bytes, arn, retention_in_days, creation_time, region))
+                results.append(CloudWatchLogStats(size_bytes, arn, retention_in_days, creation_time, region))
             if "nextToken" in response:
                 response = client.describe_log_groups(nextToken=response["nextToken"])
             else:
